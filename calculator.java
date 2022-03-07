@@ -4,6 +4,22 @@ import java.util.Scanner;
 
 public class calculator {
 
+    static double addition(double n1, double n2){
+        return n1+n2;
+    }
+
+    static double substraction(double n1, double n2){
+        return n1-n2;
+    }
+
+    static double multiplication(double n1, double n2){
+        return n1*n2;
+    }
+
+    static double division(double n1, double n2){
+        return n1/n2;
+    }
+
     static double operations(){
         System.out.println("Hello !");
         System.out.println("What do you want to do ?\n\n");
@@ -24,16 +40,16 @@ public class calculator {
         double ans = 0;
         switch(x){
             case 1:
-                ans = n1+n2;
+                ans = addition(n1,n2);
                 break;
             case 2:
-                ans = n1-n2;
+                ans = substraction(n1, n2);
                 break;
             case 3:
-                ans = n1*n2;
+                ans = multiplication(n1,n2);
                 break;
             case 4:
-                ans = n1/n2;
+                ans = division(n1,n2);
                 break;
         }
         return ans;
