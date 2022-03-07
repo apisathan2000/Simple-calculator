@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class calculator {
 
-    static int operations(){
+    static double operations(){
         System.out.println("Hello !");
         System.out.println("What do you want to do ?\n\n");
         System.out.println("press num 1 for sum");
@@ -17,11 +17,11 @@ public class calculator {
         int x = scn1.nextInt();
 
         System.out.println("Enter number1 .......");
-        int n1 = scn1.nextInt();
+        double n1 = scn1.nextInt();
         System.out.println("Enter number2 .......");
-        int n2 = scn1.nextInt();
+        double n2 = scn1.nextInt();
 
-        int ans = 0;
+        double ans = 0;
         switch(x){
             case 1:
                 ans = n1+n2;
@@ -40,7 +40,7 @@ public class calculator {
     }
 
     public static void main( String[] args){
-        int ans = operations();
+        double ans = operations();
         System.out.println("Answer is "+ans);
     }
 }
